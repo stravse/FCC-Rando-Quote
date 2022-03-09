@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style/main.css">
+    <script type="module" src="src/scripts/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/b5d9b34d7e.js" crossorigin="anonymous" defer></script>
+    <title>Document</title>
+</head>
+<body>  
+    <div class="wrapper bg-color">
+        <div class="the-box" id="quote-box">
+            <div class="dynamic-container">
+                <div class="text text-color">
+                    <i class="fas fa-quote-left icon-size icon-size__left"></i>
+                    <span id="text" ></span>
+                    <i class="fas fa-quote-right icon-size icon-size__right"></i>
+                </div>
+                <div id="author" class="author"></div>
+            </div>
+            <div class="button-container">
+                <a class="button-container__button " id="tweet-quote" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="button-container__button " id="tumbler"  target="_blank">
+                    <i class="fab fa-tumblr"></i>
+                </a>
+                <button id="new-quote" class="button-container__quote bg-color">New Quote</button>
+            </div>
+        </div>
+        <div class="footer">Code by stravse</div>
+    </div>
+</body>
+</html>

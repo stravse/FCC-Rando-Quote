@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Playball&family=Playfair+Display:wght@600&family=Roboto+Mono&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 1000ms ease-in;
+  transition: 1000ms ease-in;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.the-box {
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 3px;
+  min-width: 30ch;
+  max-width: 90ch;
+  margin: 0 1.5em;
+}
+
+.the-box .dynamic-container {
+  position: relative;
+  width: 100%;
+}
+
+.the-box .text {
+  width: 100%;
+  font-size: 2em;
+  font-family: 'Playball', cursive;
+}
+
+.the-box .icon-size {
+  font-size: 0.5em;
+  vertical-align: top;
+}
+
+.the-box .icon-size__left {
+  margin-right: 5px;
+}
+
+.the-box .icon-size__right {
+  margin-left: 5px;
+}
+
+.the-box .author {
+  font-size: 1.2em;
+  text-align: end;
+  margin: 1em 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5em;
+  margin-top: 1em;
+}
+
+.button-container__quote {
+  padding: 0.5em;
+  border-radius: 5px;
+  margin: 0;
+  margin-left: auto;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #fff;
+  -webkit-transition: 1000ms ease-in;
+  transition: 1000ms ease-in;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.button-container__button {
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  -webkit-transition: 1000ms ease-in;
+  transition: 1000ms ease-in;
+  cursor: pointer;
+  min-width: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.footer {
+  margin-top: 1em;
+  font-size: 1.2em;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+}
+
+@media (max-width: 600px) {
+  .the-box .text {
+    font-size: 1.5em;
+  }
+  .the-box .author {
+    font-size: 1.1em;
+  }
+  .the-box .icon-size {
+    font-size: 0.4em;
+  }
+  .button-container__quote {
+    font-size: 0.9em;
+  }
+  .button-container__button {
+    font-size: 1em;
+  }
+  .footer {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

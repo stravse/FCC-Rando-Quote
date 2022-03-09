@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Playfair+Display:wght@600&family=Roboto+Mono&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    transition: 1000ms ease-in;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+.the-box{
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 3px;
+    min-width: 30ch;
+    max-width: 90ch;
+    margin: 0 1.5em;
+    .dynamic-container{
+        position: relative;
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+        font-size: 2em;
+        font-family: 'Playball', cursive;
+    }
+    .icon-size{
+        font-size: 0.5em;
+        vertical-align: top;
+        &__left{
+            margin-right: 5px;
+        }
+        &__right{
+            margin-left: 5px;
+        }
+    }
+
+    .author{
+        font-size: 1.2em;
+        text-align: end;
+        margin: 1em 0;
+        font-family: 'Playfair Display', serif;
+    }
+}
+.button-container{
+    display: flex;
+    gap: 0.5em;
+    margin-top: 1em;
+    &__quote{
+        padding: 0.5em;
+        border-radius: 5px;
+        margin: 0;
+        margin-left: auto;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 1rem;
+        color: #fff;
+        transition: 1000ms ease-in;
+        font-family: 'Roboto Mono', monospace;
+    }
+    &__button{
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        padding: 0.5em;
+        transition: 1000ms ease-in;
+        cursor: pointer;
+        min-width: 20px;
+        text-align: center;
+        vertical-align: middle;
+    }
+}
+.footer{
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+
+@media (max-width: 600px) {
+    .the-box{
+        .text{
+            font-size: 1.5em;
+        }
+        .author{
+            font-size: 1.1em;
+        }
+        .icon-size{
+            font-size: 0.4em;
+        }
+    }
+    .button-container{
+        &__quote{
+            font-size: 0.9em;
+        }
+        &__button{
+            font-size: 1em;
+        }
+    }
+    
+    .footer{
+        font-size: 1em;
+    }
+}
