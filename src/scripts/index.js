@@ -8,6 +8,8 @@ const tweet = document.getElementById("tweet-quote");
 const tumbler = document.getElementById("tumbler");
 const body = document.body;
 
+// Everythin in here is a hack since I am using npm i just made this js into a module in the html calling of the script
+
 var colors = [
     '#16a085',
     '#27ae60',
